@@ -5,12 +5,14 @@
     list-style: none;
 }
 header {
+    display: grid;
     position: relative;
     background-color: black;
     height: 75vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
+    place-content: center;
   }
   
   header video {
@@ -50,10 +52,42 @@ header {
     opacity: 0.5;
     z-index: 1;
   }
-  
-  /* Media Query for devices withi coarse pointers and no hover functionality */
-  
-  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  body{
+    height: 150vh ;
+  }
+  #test{
+    background: url(https://staticdelivery.nexusmods.com/images/110/5097247-1386125823.jpg); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+  .rounded-image{
+    width: 33%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: 10px 10px;
+    border-radius: 50%;
+  }
+
+  .circle{
+    width: 15px;
+    aspect-ratio: 1 !important;
+    height: auto !important;
+    border-radius: 50% !important;
+  }
+  .projects-container{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .projects-container img{
+    max-height: 400px;
+    flex-grow: 1;
+    object-fit: cover;
+  }
   
   @media (pointer: coarse) and (hover: none) {
     header {
