@@ -86,7 +86,7 @@ header {
   .projects-container img{
     max-height: 400px;
     flex-grow: 1;
-    object-fit: cover;
+    object-fit: contain;
   }
   table{
     word-break: break-all;
