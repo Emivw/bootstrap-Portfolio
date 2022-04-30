@@ -87,14 +87,15 @@ header {
     max-height: 400px;
     flex-grow: 1;
     object-fit: contain;
+
     /* border-radius: 50%; */
     max-width: 300px;
   }
   table{
-    word-break: break-all;
+    word-break:keep-all;
   }
   .col-4{
-    word-break: break-all;
+    word-break: keep-all;
   }
   
   @media (pointer: coarse) and (hover: none) {
