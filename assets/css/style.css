@@ -88,6 +88,12 @@ header {
     flex-grow: 1;
     object-fit: cover;
   }
+  table{
+    word-break: break-all;
+  }
+  .col-4{
+    word-break: break-all;
+  }
   
   @media (pointer: coarse) and (hover: none) {
     header {
