@@ -88,7 +88,7 @@ header {
     flex-grow: 1;
     object-fit: contain;
     border-radius: 50%;
-    max-width: fit-content;
+    max-width: 300px;
   }
   table{
     word-break: break-all;
